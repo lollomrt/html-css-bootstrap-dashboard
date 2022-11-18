@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utilities */
+
+.light-grey {
+    background-color: #f8f9fa;
+}
+
+.border-right-none {
+    border-right: none;
+}
+
+.border-left-none {
+    border-left: none;
+}
+
+.border-none {
+    border: none;
+}
+
+.grey {
+    background-color: #e5e5e5;
+}
+
+img {
+    width: 100%;
+}
