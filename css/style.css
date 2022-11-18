@@ -13,6 +13,11 @@
     content: none;
 }
 
+header {
+    height: 80px;
+    background: #000;
+}
+
 .orange {
     color: #ff8f00;
 }
@@ -35,4 +40,22 @@
 
 img {
     width: 100%;
+}
+
+.continer-inerno {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+aside {
+    background-color: #051e34;
+    height: 100%;
+    width: 150px;
+}
+
+main {
+    background-color: #fff;
+    height: 100%;
+    width: calc(100vw - 150px);
 }
