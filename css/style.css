@@ -9,6 +9,13 @@
 .light-grey {
     background-color: #f8f9fa;
 }
+.my-dropdown-toggle::after {
+    content: none;
+}
+
+.orange {
+    color: #ff8f00;
+}
 
 .border-right-none {
     border-right: none;
