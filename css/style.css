@@ -93,6 +93,14 @@ table a {
     height: 30px;
 }
 
+.col-big {
+    width: 50%;
+}
+
+thead tr th:first-child, tbody tr td:first-child {
+    text-align: left;
+}
+
 @media screen and (max-width:768px) {
     aside {
         width: 60px
@@ -104,6 +112,17 @@ table a {
 
     .topbar .contenuto .responsive-offcanvas {
         width: 100vw;
+    }
+
+    .col-big {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .col-big {
+        width: calc(100% / 3);
     }
 }
 

@@ -71,13 +71,13 @@
                                     <div class="col-12">
                                         <div class="cont m-0 g-0 gy-3">
                                             <div class="menu py-2 px-2 w-100">
-                                                <i class="fa-solid fa-house pe-3"></i><p class="d-inline-block m-0 p-0">Home</p>
+                                                <i class="fa-solid fa-house pe-3"></i><p class="d-none d-md-inline-block m-0 p-0">Home</p>
                                             </div>
                                             <div class="menu py-2 px-2 w-100">
-                                                <i class="fa-solid fa-chart-simple pe-3"></i><p class="ps-1 d-inline-block m-0 p-0">Stats</p>
+                                                <i class="fa-solid fa-chart-simple pe-3"></i><p class="d-none ps-1 d-md-inline-block m-0 p-0">Stats</p>
                                             </div>
                                             <div class="menu py-2 px-2 w-100">
-                                                <i class="fa-solid fa-signal pe-3"></i><p class="d-inline-block m-0 p-0">Signals</p>
+                                                <i class="fa-solid fa-signal pe-3"></i><p class="d-none d-md-inline-block m-0 p-0">Signals</p>
                                             </div>
                                         </div>
                                     </div>
@@ -89,7 +89,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <div class="menu py-2 px-2 w-100">
-                                            <i class="fa-solid fa-gear pe-3"></i><p class="d-inline-block m-0 p-0">Admin</p>
+                                            <i class="fa-solid fa-gear pe-3"></i><p class="d-none d-md-inline-block m-0 p-0">Admin</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,51 +245,80 @@
                     <div class="col-12">
                         <div class="container-fluid container-inf px-3 py-4">
                             <div class="row g-4">
-                                <div class="col-12 col-md-6 ">
+                                <div class="col-12 col-md-8 ">
                                     <div class="card mb-4">
                                         <div class="card-header">
                                           <h2>Prossime classi</h2>
                                         </div>
                                         <div class="card-body">
-                                            <table class="table">
+                                            <table class="table table-hover text-center">
                                                 <thead>
                                                   <tr>
-                                                    <th scope="col-4" class="">Nome</th>
-                                                    <th scope="col-2">Data inizio</th>
-                                                    <th scope="col-2">ROI</th>
-                                                    <th scope="col-2">Stato</th>
-                                                    <th scope="col-2">Azioni</th>
+                                                    <th scope="col" class="col-big">Nome</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="">
                                                   <tr>
                                                     <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 75</p></td>
-                                                    <td class=""><p class="d-inline">15 Feb 2021</p></td>
-                                                    <td><p class="d-inline">20&#37;</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">15 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
                                                     <td><span class="badge bg-success">Done</span></td>
                                                     <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
                                                   </tr>
                                                   <tr>
-                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 75</p></td>
-                                                    <td class=""><p class="d-inline">15 Feb 2021</p></td>
-                                                    <td><p class="d-inline">20&#37;</p></td>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 76</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">16 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
                                                     <td><span class="badge bg-success">Done</span></td>
                                                     <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
                                                   </tr>
                                                   <tr>
-                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 75</p></td>
-                                                    <td class=""><p class="d-inline">15 Feb 2021</p></td>
-                                                    <td><p class="d-inline">20&#37;</p></td>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 77</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">17 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
+                                                    <td><span class="badge bg-warning text-white">process</span></td>
+                                                    <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 78</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">18 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
                                                     <td><span class="badge bg-success">Done</span></td>
                                                     <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
                                                   </tr>
                                                   <tr>
-                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 75</p></td>
-                                                    <td class=""><p class="d-inline">15 Feb 2021</p></td>
-                                                    <td><p class="d-inline">20&#37;</p></td>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 79</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">19 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
+                                                    <td><span class="badge bg-danger">Failed</span></td>
+                                                    <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 80</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
                                                     <td><span class="badge bg-success">Done</span></td>
                                                     <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
                                                   </tr>
+                                                  <tr>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 81</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">21 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
+                                                    <td><span class="badge bg-danger">Failed</span></td>
+                                                    <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row"><img class="me-3" src="./img/class-avatar.jpg" alt=""><p class="d-inline">Classe 82</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">22 Feb 2021</p></td>
+                                                    <td class="d-none d-md-table-cell"><p class="">20&#37;</p></td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td><a class="btn-table me-2" href="#"><i class="fa-solid fa-pencil"></i><a class="btn-table" href="#"><i class="fa-solid fa-trash"></i></a></td>
+                                                  </tr>
+                                                  
                                                 </tbody>
                                               </table>
                                         </div>
@@ -305,7 +334,7 @@
                                     </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-4">
                                     <div class="card">
                                         <div class="card-header">
                                           Featured
