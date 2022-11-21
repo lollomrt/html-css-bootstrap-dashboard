@@ -65,6 +65,10 @@ main {
     width: 50vw;
 }
 
+.menu:hover {
+    background-color: #324658;
+}
+
 @media screen and (max-width:768px) {
     aside {
         width: 60px
