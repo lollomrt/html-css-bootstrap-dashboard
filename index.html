@@ -15,17 +15,17 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="light-grey py-3">
+        <header class="light-grey py-3 d-flex align-items-center">
             <div class="row w-100 g-0">
                 <div class="col-12">
                     <nav class="navbar flex-nowrap navbar-expand bg-white py-0">
                         <div class="container-fluid">
-                          <a class="navbar-brand d-none d-md-block" href="#"><img src="./img/logo.svg" alt="logo"></a>
-                          <a class="navbar-brand d-block d-md-none" href="#"><img src="./img/mobile-logo.png" alt="logo"></a>
+                          <a class="navbar-brand d-none d-md-block logo-desk" href="#"><img src="./img/logo.svg" alt="logo"></a>
+                          <a class="navbar-brand d-block d-md-none logo-mobile" href="#"><img src="./img/mobile-logo.png" alt="logo"></a>
                             <form class="d-flex w-100" role="search">
                                 <div class="input-group">
-                                    <span class="input-group-text border-none grey" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                    <input type="search" id="form1" class="form-control border-none grey" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search"/>
+                                    <span class="input-group-text border-none grey h-50p" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <input type="search" id="form1" class="form-control border-none grey h-50p" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search"/>
                                 </div>
                             </form>
                             <div class="d-flex">
@@ -64,15 +64,41 @@
             
             <aside>
                 <div class="container-fluid h-100 px-3 py-4">
-                    <div class="row m-0 w-100 h-100 g-100 flex-column justify-content-between">
+                    <div class="row m-0 w-100 h-100 g-0 flex-column justify-content-between">
                         <div class="col-4 w-100 g-0">
-                            <div class="content-1">
-    
+                            <div class="contentenuto-sup text-white">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-4">
+                                        <div class="cont m-0 g-0 gy-3">
+                                            <i class="fa-solid fa-house"></i>
+                                            <i class="my-3 fa-solid fa-chart-simple"></i>
+                                            <i class="fa-solid fa-signal"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 m-0 gx-0 gy-3 d-none d-md-block">
+                                        <div class="cont">
+                                            <p class="m-0 p-0">Home</p>
+                                            <p class="lh-1 my-3 mx-0 p-0">Stats</p>
+                                            <p class="m-0 p-0">Signals</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4 w-100 g-0">
-                            <div class="content-1">
-    
+                            <div class="contentenuto-inf text-white">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-4">
+                                        <div class="cont m-0 g-0 gy-3">
+                                            <i class="fa-solid fa-gear"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 m-0 gx-0 gy-3 d-none d-md-block">
+                                        <div class="cont">
+                                            <p class="m-0 p-0">Admin</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,11 +111,135 @@
 
                 <!-- Topbar -->
 
-                <div class="row w-100 g-0">
+                <div class="topbar row w-100 g-0 text-white">
                     <div class="col-12">
                         <div class="container-fluid container-sup px-3 py-4">
-                            <div class="content">
-
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-6 order-2 order-md-1 py-2 py-md-0">
+                                    <div class="contenuto">
+                                        <h2 class="d-inline">Boolean</h2>
+                                        <a class="rounded-blue d-inline-block" href="#">Piano Blaze</a>
+                                    </div>
+                                    <div class="contenuto py-2">
+                                        <a class="rounded-blue d-inline-block" href="#">3 app</a>
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <a class="rounded-blue d-none d-md-inline-block" href="#">Boolean mobile app</a>
+                                        <a class="rounded-blue d-none d-md-inline-block" href="#">Boolean web app</a>
+                                        <a class="rounded-blue d-none d-md-inline-block" href="#">Boolean blog app</a>
+                                        <a class="rounded-blue d-inline-block d-md-none" href="#"><i class="fa-solid fa-plus lh-0"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 order-3 order-md-2">
+                                    <div class="contenuto">
+                                        <p class="m-0">Studenti online negli ultimi 30 minuti</p>
+                                        <h2 class="pt-2">125</h2>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 order-1 order-md-3">
+                                    <div class="contenuto">
+                                        <p class="d-inline-block me-4">Nuovo studente</p>
+                                        <button class="btn rounded-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus lh-0"></i></button>
+                                        <div class="offcanvas offcanvas-end responsive-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                            <div class="offcanvas-header text-black">
+                                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body text-black">
+                                                <form action="#">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <label for="mail" class="form-label d-block">Email</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="email" id="mail" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                                                <input type="password" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Città</label>
+                                                                <input type="password" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-4">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>Scegli...</option>
+                                                                    <option value="1">Italia</option>
+                                                                    <option value="2">Germania</option>
+                                                                    <option value="3">Svizzera</option>
+                                                                  </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-2">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                                                                <input type="password" class="form-control" id="exampleFormControlInput1"">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlInput1" class="form-label">Foto</label>
+                                                                <input class="form-control w-100" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    Seleziona per proseguire
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="">
+                                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
