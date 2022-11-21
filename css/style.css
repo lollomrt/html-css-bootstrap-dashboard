@@ -101,6 +101,11 @@ thead tr th:first-child, tbody tr td:first-child {
     text-align: left;
 }
 
+.inner {
+    border-top: 0.1rem solid #dfdfdf;
+    border-bottom: 0.1rem solid #dfdfdf;
+}
+
 @media screen and (max-width:768px) {
     aside {
         width: 60px
